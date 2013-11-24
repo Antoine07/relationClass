@@ -7,7 +7,6 @@ class RaspberryPi{
     protected $arm;
     
     public function __construct(){
-        
         $this->b=new Arm;
     }
 }
@@ -16,6 +15,20 @@ class RaspberryPi{
 class Arm{
   
 }
+
+// second example, un ferry est composé d'un parking
+class Ferry{
+    private $parking=null;
+    
+    public function __construct(Parking $parking){
+        $this->parking=$parking;
+    }
+}
+
+// class Parking
+
+class Parking{}
+
 
 
 ?>
